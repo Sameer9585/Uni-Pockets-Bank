@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:id="@+id/TopLayoutMA"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".Activities.MainActivity" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mpokket"
+    android:layout_width="150dp"
+    android:layout_height="150dp" />
+    <TextView
+        android:layout_below="@id/logoView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mpktTv"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/bltxt_clr"
+        android:text="mPokket"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/gifIamge"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mpktTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activities.AdminLogoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botomNaviagtion"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/usercreation_bg"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage_AL"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/unknwnimg" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstNameTextLayout_AL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/firstnameField_AL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:hint="Firstname" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--LastName-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastNameTextLayout_AL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/lastnameField_AL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:hint="Lastname" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--email-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailTextLayout_AL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/emailField_AL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--password-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phoneNumberTextLayout_AL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/phonenumField_AL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:hint="Phone number"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signout_btn_AL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/signup_bg"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/pbarlayout_AL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avlbar_AL"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:indicatorColor="#22a7f9"
+            app:indicatorName="LineScaleIndicator" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/botomNaviagtion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/pure_white"
+        app:menu="@menu/admin_navigation"
+        app:theme="@style/bottomNav" />
+
+
+</RelativeLayout>

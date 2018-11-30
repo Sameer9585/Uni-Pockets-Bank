@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    tools:context=".Activities.EmailLogin">
+
+    <LinearLayout
+        android:id="@+id/credentialsLinearLayout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="337dp"
+        android:layout_height="233dp"
+        android:layout_marginLeft="36.5dp"
+        android:layout_marginTop="79.7dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:id="@+id/usernameField"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Password Field-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:passwordToggleEnabled="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="52dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:id="@+id/passwordField"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/goButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/go"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="51.5dp" />
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="31.5dp"
+        android:layout_marginTop="393.2dp">
+        <TextView
+            android:id="@+id/donthaveaccountView"
+            android:layout_marginTop="95dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text="Dont't have an account?"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/signupButton"
+            android:background="@drawable/signup_bg"
+            android:layout_width="170dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topSnackbarLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f9">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botomNaviagtion"
+        android:background="#f7f7f9"
+        android:orientation="vertical"
+        tools:context=".Activities.RequestMoney">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/mpokket" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Left side Text-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="25dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_borrowing_limit"
+                        android:textColor="#0ea3ff"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Total amount borrowed"
+                        android:textColor="#0ea3ff"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <!--Middle text-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:textColor="#fab716"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Rs"
+                        android:textColor="#fab716"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <!--Right most-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="25dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/totalBorrowingLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1,000"
+                        android:textColor="#0ea3ff"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/amountBorrowed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textColor="#0ea3ff"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="@color/pure_white"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:text="I WANT"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/bltxt_clr"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bltxt_clr" />
+
+                </LinearLayout>
+
+                <!--For INR & spinner drop downs-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/submit_bg"
+                        android:text="INR"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+
+                        android:background="@drawable/spinner_bg">
+
+                        <Spinner
+                            android:id="@+id/requestingAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="#fff"
+                            android:gravity="right"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:id="@+id/moneyDropDown"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/drop" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Repaytext-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0"
+
+                        android:padding="8dp"
+                        android:text="You repay after"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+
+                        android:background="@drawable/spinner_bg">
+
+                        <Spinner
+                            android:id="@+id/repayDuration"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="#fff"
+                            android:dropDownVerticalOffset="50dp"
+                            android:entries="@array/repay"
+                            android:gravity="right"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:id="@+id/durationDropDown"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+
+                            android:paddingRight="10dp"
+                            android:src="@drawable/drop" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/requestButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/submit_bg"
+                    android:text="Request"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pbarlayout_RM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botomNaviagtion"
+        android:background="#99000000"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avlbar_RM"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:indicatorColor="#22a7f9"
+            app:indicatorName="BallScaleMultipleIndicator" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/botomNaviagtion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/pure_white"
+        app:menu="@menu/navigation_menu"
+        app:theme="@style/bottomNav" />
+</RelativeLayout>

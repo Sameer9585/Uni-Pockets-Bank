@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bgcolor"
+    tools:context=".Activities.CreateUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/usercreation_bg"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/unknwnimg"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/firstNameTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstnameField"
+                android:layout_margin="16dp"
+                android:hint="Firstname" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--LastName-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastNameTextLayout"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/lastnameField"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Lastname" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--email-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextLayout"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/emailField"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--password-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/passwordTextLayout"
+            android:layout_marginRight="32dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:id="@+id/passwordField"
+                android:hint="Password" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/proceedBtn"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/signup_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="80dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

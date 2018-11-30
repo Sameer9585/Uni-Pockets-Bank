@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/topUploadActivityLayout"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UploadActivity">
+
+    <LinearLayout
+        android:id="@+id/hello_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/nameOfClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="Hi, Rajesh"
+                android:textColor="@color/bltxt_clr"
+
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal"
+                android:text="Completer your Profile information to start borrowing money"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:src="@drawable/money" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:id="@+id/uploadThingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_text"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!--Aadhar Verification-->
+
+        <LinearLayout
+            android:id="@+id/aadharLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f9ff">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Aadhaar Verification"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/aadharVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+        <!--Address-->
+        <LinearLayout
+            android:id="@+id/addressLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f4f9ff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Address"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/addressVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+        <!--Stud info-->
+        <LinearLayout
+            android:id="@+id/studentInfoLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f4f9ff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Student Information"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/studentInfoVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+        <!--Bank Account-->
+        <LinearLayout
+            android:id="@+id/bankAccLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f4f9ff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Bank Account"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/bankVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+        <!--Student id-->
+        <LinearLayout
+            android:id="@+id/studenIdLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#f4f9ff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Student Id"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/studentIdVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+android:id="@+id/continueButton"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@drawable/submit_bg"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+
+        android:visibility="invisible"
+        android:id="@+id/pbarlayout"
+        android:gravity="center"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="60dp"
+            android:id="@+id/avlbar"
+            app:indicatorColor="#22a7f9"
+            android:layout_height="60dp"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:visibility="invisible"
+        android:id="@+id/pbarlayout_2"
+        android:gravity="center"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="60dp"
+            android:id="@+id/avlbar_2"
+            app:indicatorColor="#22a7f9"
+            android:layout_height="60dp"
+            app:indicatorName="LineScaleIndicator"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

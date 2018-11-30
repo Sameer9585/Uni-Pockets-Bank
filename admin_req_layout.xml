@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="15dp"
+    android:id="@+id/adminCardViewTop"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/studentIamgeView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/student" />
+
+        <LinearLayout
+            android:layout_weight="2.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/studentNameView"
+                android:textColor="@color/bltxt_clr"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajesh Aatrayan"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/regNumberView"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11602365"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tenureTextView"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenure :3 months"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/requestAmountView"
+            android:textColor="@color/yellow_bg"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="₹ 0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

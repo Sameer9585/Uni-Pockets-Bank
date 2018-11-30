@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeAuthLayout"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activities.PhoneAuthActivity">
+
+    <ImageView
+        android:id="@+id/mpokket_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mpokket" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mpokket_logo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Welcome!"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/textColor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mobileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Enter Mobile Number"
+        android:textColor="@color/textColor"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/phoneNumerEntryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileText"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/countcodeTextLayout"
+            android:layout_weight="1.8"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="100dp"
+                android:focusable="false"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:hint="India +91"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phoneNumberTextLayout"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="32dp"
+           >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/phoneNumberInput"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pbarlayout"
+        android:gravity="center"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="60dp"
+        android:id="@+id/avlbar"
+        app:indicatorColor="#22a7f9"
+        android:layout_height="60dp"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/phoneNumerEntryLayout"
+        android:id="@+id/verificationCodeTextLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="32dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/verificationCodeInput"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/textColor"
+            android:layout_height="wrap_content"
+            android:hint="Verification code"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verificationCodeTextLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/submit_bg"
+        android:text="Proceed"
+        android:id="@+id/submitButton"
+        android:textColor="#ffff" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/submitButton"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="By continuing you agree to our Terms  &amp; Conditions and Privacy Policy"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

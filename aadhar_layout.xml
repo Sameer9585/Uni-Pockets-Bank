@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_height="wrap_content">
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:id="@+id/addharTextInputLayout"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="32dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <android.support.v7.widget.AppCompatEditText
+       android:id="@+id/enteraadharNumber"
+       android:layout_marginLeft="20dp"
+       android:inputType="number"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="20dp"
+       android:hint="Aadhar Number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+
+
